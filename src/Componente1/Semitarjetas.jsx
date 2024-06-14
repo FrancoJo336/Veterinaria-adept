@@ -1,5 +1,6 @@
 import React from "react";
 import './StyleS.css';
+import { Link } from "react-router-dom";
 
 function Semitarjetas(props) {
   return (
@@ -9,7 +10,7 @@ function Semitarjetas(props) {
             <img src={props.Imagen} alt="" />
             <h3>{props.Servicio}</h3>
             <p>{props.Descripcion}</p>
-            <a href="#" className="btn">Ver más</a>
+            <Link href="#" className="btn">Ver más</Link>
         </div>
     </div>
     </div>
