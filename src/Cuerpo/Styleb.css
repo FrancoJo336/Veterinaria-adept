@@ -1,0 +1,81 @@
+body{
+    background-image: url(../../public/fondo1.jpg);/* cuerpo basico */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.content h1{
+    line-height: auto;
+    background-color: rgba(226, 206, 94, 0.911);
+    border-radius: 30px;
+    font-weight: bolder;
+    text-align: center;
+    width: auto;
+}
+.content{
+    width: auto;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.col img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom:-30px;
+    border-radius: 10px;
+    align-self: center;
+}
+.col img:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
+
+.col:nth-child(1) img{
+    width: 100%;
+}
+.col:nth-child(2) img{
+    width: 75%;
+}
+.col:nth-child(3) img{
+    width: 73%;
+}
+.descripcion{
+    width: 100%;
+    background: #debc85e6;
+    padding: 50px 0;
+    text-align: center;
+    border-radius: 5px;
+}
+.descripcion p{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    text-shadow:-1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
+}
+.descripcion h1{
+    line-height: 50px;
+}
+.descripcion h3{
+    line-height: 50px;
+}
+.descripcion p{
+    line-height: 30px;
+}
+@media (max-width:768px){
+    .container{
+        padding:20px;
+    }
+}
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+.clearfix{
+    clear: both;
+    float: none;
+}

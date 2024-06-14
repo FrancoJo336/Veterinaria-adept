@@ -1,0 +1,53 @@
+
+nav img{
+   float: left;
+   height: 95px;
+   width: auto;
+}
+.nav-item{
+   padding: 15px;
+   font-weight: bolder;
+   background-color: #ebdba3ed;
+   border-radius: 20px;
+   margin: 8px;
+}
+.d-flex input{
+   width:auto;
+}
+.d-flex a{/* Diseño de Botones  */
+    display: block;
+    width: 30%;
+    font-weight: auto;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #50381c;
+    text-align: center;
+    color: #ffffff;
+  }
+  .d-flex a:hover{
+    background-color: transparent;
+    border: solid #331a0d;
+    color: #2a1c0a;
+  }
+  .d-flex button{
+    display: block;
+    width: 30%;
+    font-weight: auto;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #331a0d;
+    border-color: #5d3420;
+  }
+  .d-flex button:hover{
+    background-color: transparent;
+    border: solid #331a0d;
+    color: #2a1c0a;
+  }
+  d-flex input{
+    width:auto;
+  }

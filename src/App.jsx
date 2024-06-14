@@ -1,28 +1,24 @@
 import './App.css';
+import Navbar from './navbar/Navbar';
+import Pie from "./Piepagina/Pie";
+import Body from "./Cuerpo/Body";
+import Semitarjetas from "./Componente1/Semitarjetas";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
-    </div>
+      <>
+      <Navbar/>
+      <Body/>
+      <div className="box-container" style={{ justifyContent: 'center' }}>
+        <Semitarjetas Servicio="Atención Medica" Descripcion="Medición de temperatura y signos vitales" Imagen="../../public/medicina.png"/>
+        <Semitarjetas Servicio="Peluqueria" Descripcion="Cortes fantasticos" Imagen="../../public/tijeras.png"/>
+        <Semitarjetas Servicio="Inyecciones" Descripcion="Control de vacunas" Imagen="../../public/vacuna.png"/>
+        <Semitarjetas Servicio="Comida" Descripcion="Comida Valanceada" Imagen="../../public/comida.png"/>
+        <Semitarjetas Servicio="Adopcion" Descripcion="Tiernos y fieles" Imagen="../../public/papeles.png"/>
+        </div>
+      <Pie/>
+      
+      </>
   );
 }
 
