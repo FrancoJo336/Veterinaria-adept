@@ -1,0 +1,75 @@
+
+
+.carousel {
+    max-width: 800px; 
+    margin: 0 auto; 
+  }
+  
+  .carousel-inner .carousel-item {
+    height: 450px; 
+  }
+  
+  .carousel-inner .carousel-item img {
+    object-fit: cover; 
+    height: 100%; 
+    width: 100%; 
+  }
+  
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px; 
+    border-radius: 5px; 
+  }
+  
+  .carousel-caption h5 {
+    color: #fff; 
+    font-size: 1.5rem; 
+    font-weight: bold; 
+  }
+  
+  .carousel-caption p {
+    color: #ddd; 
+    font-size: 1rem; 
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  
+  .carousel-control-prev-icon::after,
+  .carousel-control-next-icon::after {
+    font-size: 2rem; 
+  }
+  
+
+  @media (max-width: 768px) {
+    .carousel {
+      max-width: 100%; 
+    }
+  
+    .carousel-inner .carousel-item {
+      height: 300px; 
+    }
+  
+    .carousel-caption h5 {
+      font-size: 1rem; 
+    }
+  
+    .carousel-caption p {
+      font-size: 0.8rem;
+    }
+  }
+  
+  
+  .tamano h1{
+    line-height: auto;
+    background-color: rgba(226, 206, 94, 0.911);
+    border-radius: 30px;
+    font-weight: bolder;
+    text-align: center;
+    width: auto;
+    margin: 15px;
+    height: auto;
+}
