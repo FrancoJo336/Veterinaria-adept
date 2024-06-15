@@ -3,7 +3,7 @@ import './Style.css';
 import { Link } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 
-function Navbar() {
+function Navbar(props) {
   return (
     <div className="Navegador">
       <nav className="navbar navbar-expand-lg" style={{ backgroundColor: '#ead2a2' }}>
@@ -21,18 +21,18 @@ function Navbar() {
                 <Link className="nav-link" to='/personal'>Personal</Link>
               </li>
               <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <Link className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Servicios
-                </a>
+                </Link>
                 <ul className="dropdown-menu">
-                  <li><Link className="dropdown-item" to="/personal">Atención médica</Link></li>
-                  <li><Link className="dropdown-item" to="#">Peluquería</Link></li>
-                  <li><Link className="dropdown-item" to="#">Inyecciones</Link></li>
-                  <li><Link className="dropdown-item" to="#">Comida</Link></li>
+                  <li><Link className="dropdown-item" to="/">Atención médica</Link></li>
+                  <li><Link className="dropdown-item" to="/">Peluquería</Link></li>
+                  <li><Link className="dropdown-item" to="/">Inyecciones</Link></li>
+                  <li><Link className="dropdown-item" to="/">Comida</Link></li>
                 </ul>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="#">Adopciones</Link>
+                <Link className="nav-link" to="/adopcion-{props.Ani}" >Adopciones</Link>
               </li>
             </ul>
             <form className="d-flex" role="search">
